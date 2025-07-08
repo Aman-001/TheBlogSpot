@@ -1,4 +1,4 @@
-# 📝 The Blog App
+# 📝 The Blog Spot
 
 A sleek, responsive, and feature-rich blogging platform that empowers users to seamlessly write, edit, and explore content-rich posts. Crafted with a strong focus on performance, accessibility, scalability, and exceptional user experience, this web application delivers a polished writing interface and an intuitive content discovery system for modern creators and readers alike.
 
