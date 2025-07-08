@@ -3,10 +3,14 @@ import service from "../appwrite/config"
 import { Container, PostCard } from '../components'
 import { useSelector } from 'react-redux'
 import { Query } from 'appwrite'
+import { useNavigate } from "react-router-dom";
+
 
 function Home() {
     const [posts, setPosts] = useState([])
     const userData = useSelector((state) => state.auth.userData)
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         if (userData) {
@@ -95,7 +99,7 @@ function Home() {
                     </h2>
 
                     <button
-                        onClick={() => window.location.href = "/Signup"}
+                        onClick={() => navigate("/signup")}
                         className="inline-block bg-white text-black font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-slate-500 hover:text-white transition duration-300 text-sm sm:text-base"
                     >
                         JOIN NOW
